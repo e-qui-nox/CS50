@@ -3,13 +3,13 @@
 public class Mario {
 	public static void main(String []args) {
 		int height;
-		Scanner scan = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 	    do
 	    {
 	        System.out.println("height: ");
-	        height = scan.nextInt();
+	        height = sc.nextInt();
 	    }
-	    while(height < 0  || height > 23);
+	    
 	    
 	    for(int i = height; i >= 1; i--) {
 	        for(int j = 0; j <= height; j++){
@@ -18,7 +18,9 @@ public class Mario {
 	            else
 	            	System.out.print(" ");
 	        }
+		sc.close();
 	        System.out.print("\n");
+		
 	    }
 	}
 }
